@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masti</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <div>
+        <img class="hammer" src="assets/hammer.png" alt="">
+        <div class="parent">
+
+            <div class="child" >
+                <img onclick="hitA()" class="dirt" src="assets/dirt.png" alt="">
+                <div><img onclick="hitA()" class="diglett a" src="assets/diglett.png" alt=""></div>
+            </div>
+            
+            <div class="child" >
+                <img onclick="hitB()" class="dirt" src="assets/dirt.png" alt="">
+                <div><img onclick="hitB()" class="diglett b " src="assets/diglett.png" alt=""></div>
+            </div>
+    
+            <div class="child">
+                <img onclick="hitC()" class="dirt" src="assets/dirt.png" alt="">
+                <div><img onclick="hitC()" class="diglett c " src="assets/diglett.png" alt=""></div>
+            </div>
+    
+            <div class="child">
+                <img class="dirt" onclick="hitD()" src="assets/dirt.png" alt="">
+                <div><img class="diglett d" onclick="hitD()" src="assets/diglett.png" alt=""></div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+    <!-- 
+        ln28 and ln33.
+        onclick event not working for the diglett image. it works for other 2 children, but not these 2.
+     -->
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>

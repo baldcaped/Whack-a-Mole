@@ -1,0 +1,35 @@
+body {
+    background-color: tan;
+}
+
+
+.parent {
+    text-align: center;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.diglett {
+    width: 35%;
+    position: relative;
+    bottom: 15rem;
+    z-index: -1;
+    height: auto;
+}
+
+.dirt {
+    width: 60%;
+}
+
+.hammer {
+    width: 10%;
+    z-index: 1;
+    position: absolute;
+    right: 45%;
+    
+}
+
+.hammerBIG {
+    width: 20%;
+}
