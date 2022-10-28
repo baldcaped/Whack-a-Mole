@@ -1,11 +1,32 @@
 body {
-    background-color: tan;
+   background: linear-gradient(to bottom, #FFD194, #D1913C); 
 }
 
 
+h1 {
+    color: #633B1B;
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+p {
+    position: relative;
+    color: #5f5344;
+    font-family: 'Kalam', cursive;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 0 0 0 10rem;
+}
+
+#name {
+    text-align: center;
+}
+
 .parent {
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 4.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -16,6 +37,7 @@ body {
     bottom: 15rem;
     z-index: -1;
     height: auto;
+    opacity: 0;
 }
 
 .dirt {
@@ -23,13 +45,39 @@ body {
 }
 
 .hammer {
+
     width: 10%;
     z-index: 1;
     position: absolute;
+    top: 20rem;
     right: 45%;
     
 }
 
-.hammerBIG {
-    width: 20%;
+
+
+.social-footer {
+    display: flex;
+    flex: wrap;
+    text-align: center;
+    justify-content: center;
 }
+
+.social {
+    color: #633B1B;
+
+    padding: 0 1rem 0 1rem;
+    height: 1.5rem;
+    text-align: center;
+}
+
+.copyright {
+
+    margin: .5rem;
+    text-align: center;
+    color: #5f5344;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: .7rem;
+}
+
+
