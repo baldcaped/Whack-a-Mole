@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masti</title>
+
+    <script
+      src="https://kit.fontawesome.com/5dc0cc01cf.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;700&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <audio autoplay="true" loop>
+      <source src="sounds/bgm.wav" type="audio/wav" />
+    </audio>
+
+    <div id="name">
+      <h1>Whack-A-Mole</h1>
+      <p>Diglett edition</p>
+    </div>
+
+    <div id="game">
+      <img class="hammer" src="assets/hammer.png" alt="" />
+      <div class="parent">
+        <div class="child">
+          <img onclick="hitA()" class="dirt a" src="assets/dirt.png" alt="" />
+          <div>
+            <img
+              onclick="hitA()"
+              class="diglett a"
+              src="assets/diglett.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="child">
+          <img onclick="hitB()" class="dirt b" src="assets/dirt.png" alt="" />
+          <div>
+            <img
+              onclick="hitB()"
+              class="diglett b"
+              src="assets/diglett.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="child">
+          <img onclick="hitC()" class="dirt c" src="assets/dirt.png" alt="" />
+          <div>
+            <img
+              onclick="hitC()"
+              class="diglett c"
+              src="assets/diglett.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="child">
+          <img class="dirt d" onclick="hitD()" src="assets/dirt.png" alt="" />
+          <div>
+            <img
+              class="diglett d"
+              onclick="hitD()"
+              src="assets/diglett.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-footer">
+      <a class="social" href="https://www.facebook.com/BaldCaped/"
+        ><i class="fa-brands fa-facebook"></i
+      ></a>
+
+      <a class="social" href="https://twitter.com/greeedPNG"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+
+      <a class="social" href="https://github.com/greeedPNG"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+
+      <a class="social" href="https://www.instagram.com/greeed.png/"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+
+      <a class="social" href="mailto:kumawatdarshan.1304@gmail.com"
+        ><i class="fa-solid fa-envelope"></i
+      ></a>
+    </div>
+
+    <footer>
+      <h4 class="copyright">© Copyright 2022 Whack-A-Diglett</h4>
+    </footer>
+
+    <!-- 
+        ln28 and ln33.
+        onclick event not working for the diglett image. it works for other 2 children, but not these 2.
+    -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
